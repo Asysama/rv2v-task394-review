@@ -1,0 +1,18 @@
+{
+  "schema_version": "rv2v-publication-receipt/1",
+  "workflow": "engineering-workflow/3.5.0",
+  "stage": "gate-c",
+  "repository": "hipo-dev/rv2v-reasoning",
+  "pull_request": 82,
+  "head_commit": "e8da635cc31ff6c0b542c1e8ab447474708dff08",
+  "evidence_digest": "b18f1bb3d9889594cac176fd0c7472374f543b1a85e9656450606938e49fdf25",
+  "hosted_url": "https://asysama.github.io/rv2v-task394-review/review/rv2v/task-394/gate-c/b18f1bb3d9889594cac176fd0c7472374f543b1a85e9656450606938e49fdf25.html",
+  "html_sha256": "e0d160e9be22d1a8e6100327334e7ae7b339de5da619821e9681d8daa329b71a",
+  "html_bytes": 202016,
+  "resource_count": 25,
+  "resources_sha256": "1aad7f76ef07da86f0fccff3a2513dfcea9bbd89a8e7bffeae952f7c231c0e72",
+  "http_verification_digest": "abb8b9ddd7307df5cfc6df26140c98bcee833ceffd0b770d7c7b240e70b65768",
+  "http_verified": true,
+  "verified_at_utc": "2026-09-02T12:25:23.116245+00:00",
+  "publication_digest": "89c07577aaf79769cd17205df91b45dd28442b995693f0cfc475f876c110e0ac"
+}

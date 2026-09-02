@@ -1,0 +1,235 @@
+{
+  "schema_version": "rv2v-http-verification/1",
+  "workflow": "engineering-workflow/3.5.0",
+  "evidence_digest": "b18f1bb3d9889594cac176fd0c7472374f543b1a85e9656450606938e49fdf25",
+  "hosted_url": "https://asysama.github.io/rv2v-task394-review/review/rv2v/task-394/gate-c/b18f1bb3d9889594cac176fd0c7472374f543b1a85e9656450606938e49fdf25.html",
+  "resources": [
+    {
+      "kind": "html",
+      "sample_id": null,
+      "path": null,
+      "url": "https://asysama.github.io/rv2v-task394-review/review/rv2v/task-394/gate-c/b18f1bb3d9889594cac176fd0c7472374f543b1a85e9656450606938e49fdf25.html",
+      "bytes": 202016,
+      "sha256": "e0d160e9be22d1a8e6100327334e7ae7b339de5da619821e9681d8daa329b71a",
+      "status": "PASS"
+    },
+    {
+      "kind": "input",
+      "sample_id": "Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000000",
+      "path": "input_video.mp4",
+      "url": "https://asysama.github.io/rv2v-task394-review/review/rv2v/task-394/gate-c/media/896cc7907188dac5a0e65520a929285fe1c04dbf59874288db584f2567534858/assets/Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000000/input_video.mp4",
+      "bytes": 1316779,
+      "sha256": "f9424811c74d3377612c8fcc16a52e1843dc3fd4205539b13e3c2b5f0612e0ee",
+      "status": "PASS"
+    },
+    {
+      "kind": "target",
+      "sample_id": "Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000000",
+      "path": "target_video.mp4",
+      "url": "https://asysama.github.io/rv2v-task394-review/review/rv2v/task-394/gate-c/media/896cc7907188dac5a0e65520a929285fe1c04dbf59874288db584f2567534858/assets/Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000000/target_video.mp4",
+      "bytes": 2006792,
+      "sha256": "ea86fba92e826888a9592b407e2cd2ff91ee31f683b07f2121452842b1143405",
+      "status": "PASS"
+    },
+    {
+      "kind": "reference",
+      "sample_id": "Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000000",
+      "path": "reference/right_camera.mp4",
+      "url": "https://asysama.github.io/rv2v-task394-review/review/rv2v/task-394/gate-c/media/896cc7907188dac5a0e65520a929285fe1c04dbf59874288db584f2567534858/assets/Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000000/reference/right_camera.mp4",
+      "bytes": 1167034,
+      "sha256": "653e98abc921b848a9d43b0644969364544025ae8a8ce7158652497eebfd192b",
+      "status": "PASS"
+    },
+    {
+      "kind": "input",
+      "sample_id": "Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000120",
+      "path": "input_video.mp4",
+      "url": "https://asysama.github.io/rv2v-task394-review/review/rv2v/task-394/gate-c/media/896cc7907188dac5a0e65520a929285fe1c04dbf59874288db584f2567534858/assets/Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000120/input_video.mp4",
+      "bytes": 609536,
+      "sha256": "ab74971c07fb997174ea4a2b7706dae80925c9f6b64d7f8cb7111f5e92451686",
+      "status": "PASS"
+    },
+    {
+      "kind": "target",
+      "sample_id": "Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000120",
+      "path": "target_video.mp4",
+      "url": "https://asysama.github.io/rv2v-task394-review/review/rv2v/task-394/gate-c/media/896cc7907188dac5a0e65520a929285fe1c04dbf59874288db584f2567534858/assets/Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000120/target_video.mp4",
+      "bytes": 1844403,
+      "sha256": "b474a787f5a4d61f004507fb415b4d737eff422c0dd30bffe19281f9ee040b22",
+      "status": "PASS"
+    },
+    {
+      "kind": "reference",
+      "sample_id": "Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000120",
+      "path": "reference/right_camera.mp4",
+      "url": "https://asysama.github.io/rv2v-task394-review/review/rv2v/task-394/gate-c/media/896cc7907188dac5a0e65520a929285fe1c04dbf59874288db584f2567534858/assets/Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000120/reference/right_camera.mp4",
+      "bytes": 575583,
+      "sha256": "4e54bb9e8be5e584a1d8001defaabdba2761bb0c336fa2836ac45521a2e0c578",
+      "status": "PASS"
+    },
+    {
+      "kind": "input",
+      "sample_id": "Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000124",
+      "path": "input_video.mp4",
+      "url": "https://asysama.github.io/rv2v-task394-review/review/rv2v/task-394/gate-c/media/896cc7907188dac5a0e65520a929285fe1c04dbf59874288db584f2567534858/assets/Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000124/input_video.mp4",
+      "bytes": 725948,
+      "sha256": "6b10f8cc619e23389cad2b91397f33e11e2c6a3b5fee668b0057f7b6df7cd57e",
+      "status": "PASS"
+    },
+    {
+      "kind": "target",
+      "sample_id": "Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000124",
+      "path": "target_video.mp4",
+      "url": "https://asysama.github.io/rv2v-task394-review/review/rv2v/task-394/gate-c/media/896cc7907188dac5a0e65520a929285fe1c04dbf59874288db584f2567534858/assets/Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000124/target_video.mp4",
+      "bytes": 1649992,
+      "sha256": "59cfdfd19f2abab971d21cb99632514ecb144b1205c678801947447dfdc7dc94",
+      "status": "PASS"
+    },
+    {
+      "kind": "reference",
+      "sample_id": "Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000124",
+      "path": "reference/right_camera.mp4",
+      "url": "https://asysama.github.io/rv2v-task394-review/review/rv2v/task-394/gate-c/media/896cc7907188dac5a0e65520a929285fe1c04dbf59874288db584f2567534858/assets/Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000124/reference/right_camera.mp4",
+      "bytes": 705251,
+      "sha256": "d70ec04f6a8fcd1dee204d347e5093fc6776859b1e90c76959f56c9ba6ae9db7",
+      "status": "PASS"
+    },
+    {
+      "kind": "input",
+      "sample_id": "Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000276",
+      "path": "input_video.mp4",
+      "url": "https://asysama.github.io/rv2v-task394-review/review/rv2v/task-394/gate-c/media/896cc7907188dac5a0e65520a929285fe1c04dbf59874288db584f2567534858/assets/Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000276/input_video.mp4",
+      "bytes": 660806,
+      "sha256": "de5f1c0ddaef9df262743d35ddad3eeaa9ffc06fc717d1ce7a6365444c8c3f41",
+      "status": "PASS"
+    },
+    {
+      "kind": "target",
+      "sample_id": "Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000276",
+      "path": "target_video.mp4",
+      "url": "https://asysama.github.io/rv2v-task394-review/review/rv2v/task-394/gate-c/media/896cc7907188dac5a0e65520a929285fe1c04dbf59874288db584f2567534858/assets/Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000276/target_video.mp4",
+      "bytes": 2030984,
+      "sha256": "5849d984e20eaf732647cc2ec84cf9915e09230f63fbe9b025b0b9275b69dde9",
+      "status": "PASS"
+    },
+    {
+      "kind": "reference",
+      "sample_id": "Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000276",
+      "path": "reference/right_camera.mp4",
+      "url": "https://asysama.github.io/rv2v-task394-review/review/rv2v/task-394/gate-c/media/896cc7907188dac5a0e65520a929285fe1c04dbf59874288db584f2567534858/assets/Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000276/reference/right_camera.mp4",
+      "bytes": 698339,
+      "sha256": "1d4ec53b7d074abbef75d46e8ab9982a49f159b5debc1e931aa3a22e5d21b34c",
+      "status": "PASS"
+    },
+    {
+      "kind": "input",
+      "sample_id": "Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000600",
+      "path": "input_video.mp4",
+      "url": "https://asysama.github.io/rv2v-task394-review/review/rv2v/task-394/gate-c/media/896cc7907188dac5a0e65520a929285fe1c04dbf59874288db584f2567534858/assets/Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000600/input_video.mp4",
+      "bytes": 907772,
+      "sha256": "63ab412e57a19cb54167ad167cd1f7f3fe3dfb34e617fde7371d75216227daf3",
+      "status": "PASS"
+    },
+    {
+      "kind": "target",
+      "sample_id": "Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000600",
+      "path": "target_video.mp4",
+      "url": "https://asysama.github.io/rv2v-task394-review/review/rv2v/task-394/gate-c/media/896cc7907188dac5a0e65520a929285fe1c04dbf59874288db584f2567534858/assets/Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000600/target_video.mp4",
+      "bytes": 2079447,
+      "sha256": "d87f080e153b9d3d75eec235998e7b59338254a68733409d0d88825331897f5c",
+      "status": "PASS"
+    },
+    {
+      "kind": "reference",
+      "sample_id": "Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000600",
+      "path": "reference/right_camera.mp4",
+      "url": "https://asysama.github.io/rv2v-task394-review/review/rv2v/task-394/gate-c/media/896cc7907188dac5a0e65520a929285fe1c04dbf59874288db584f2567534858/assets/Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000600/reference/right_camera.mp4",
+      "bytes": 897346,
+      "sha256": "aa631957e03adcfb25808d1f000bbdfa33e2f0f5d0d72a6627a81fb12b8924bd",
+      "status": "PASS"
+    },
+    {
+      "kind": "input",
+      "sample_id": "Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000613",
+      "path": "input_video.mp4",
+      "url": "https://asysama.github.io/rv2v-task394-review/review/rv2v/task-394/gate-c/media/896cc7907188dac5a0e65520a929285fe1c04dbf59874288db584f2567534858/assets/Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000613/input_video.mp4",
+      "bytes": 547549,
+      "sha256": "74b2f48873bff3ed6eb08b4b2375e71299a22af8503053c9d48c6a9662911eee",
+      "status": "PASS"
+    },
+    {
+      "kind": "target",
+      "sample_id": "Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000613",
+      "path": "target_video.mp4",
+      "url": "https://asysama.github.io/rv2v-task394-review/review/rv2v/task-394/gate-c/media/896cc7907188dac5a0e65520a929285fe1c04dbf59874288db584f2567534858/assets/Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000613/target_video.mp4",
+      "bytes": 2230421,
+      "sha256": "28a618c4afe659c0a2e9fd04b3de250f20d96b45549d6bc7a7d72e03d48e4601",
+      "status": "PASS"
+    },
+    {
+      "kind": "reference",
+      "sample_id": "Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000613",
+      "path": "reference/right_camera.mp4",
+      "url": "https://asysama.github.io/rv2v-task394-review/review/rv2v/task-394/gate-c/media/896cc7907188dac5a0e65520a929285fe1c04dbf59874288db584f2567534858/assets/Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000613/reference/right_camera.mp4",
+      "bytes": 535959,
+      "sha256": "26e69e1c29c9d90066fd5ce5ec1d028697f7f78555482ca142be70dcbd0132e8",
+      "status": "PASS"
+    },
+    {
+      "kind": "input",
+      "sample_id": "Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000628",
+      "path": "input_video.mp4",
+      "url": "https://asysama.github.io/rv2v-task394-review/review/rv2v/task-394/gate-c/media/896cc7907188dac5a0e65520a929285fe1c04dbf59874288db584f2567534858/assets/Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000628/input_video.mp4",
+      "bytes": 384190,
+      "sha256": "cfc5b550debaa6720e05afe0c79502a46c42e5bc1289c18f6a4b191ac17babcd",
+      "status": "PASS"
+    },
+    {
+      "kind": "target",
+      "sample_id": "Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000628",
+      "path": "target_video.mp4",
+      "url": "https://asysama.github.io/rv2v-task394-review/review/rv2v/task-394/gate-c/media/896cc7907188dac5a0e65520a929285fe1c04dbf59874288db584f2567534858/assets/Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000628/target_video.mp4",
+      "bytes": 1320204,
+      "sha256": "16cfda37749c652afcdf8bfa806771739f9659e242a8f8771d43633c0ff120ff",
+      "status": "PASS"
+    },
+    {
+      "kind": "reference",
+      "sample_id": "Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000628",
+      "path": "reference/right_camera.mp4",
+      "url": "https://asysama.github.io/rv2v-task394-review/review/rv2v/task-394/gate-c/media/896cc7907188dac5a0e65520a929285fe1c04dbf59874288db584f2567534858/assets/Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000628/reference/right_camera.mp4",
+      "bytes": 408143,
+      "sha256": "a224d98c24b761d6e405c4adb9ac888070d1de83e280be6130c60e7f1603bb14",
+      "status": "PASS"
+    },
+    {
+      "kind": "input",
+      "sample_id": "Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000861",
+      "path": "input_video.mp4",
+      "url": "https://asysama.github.io/rv2v-task394-review/review/rv2v/task-394/gate-c/media/896cc7907188dac5a0e65520a929285fe1c04dbf59874288db584f2567534858/assets/Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000861/input_video.mp4",
+      "bytes": 793393,
+      "sha256": "6e8b9a16f4ce841d276415c3c5855fd6be97a6beef59a3c1eecc3be51e823d24",
+      "status": "PASS"
+    },
+    {
+      "kind": "target",
+      "sample_id": "Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000861",
+      "path": "target_video.mp4",
+      "url": "https://asysama.github.io/rv2v-task394-review/review/rv2v/task-394/gate-c/media/896cc7907188dac5a0e65520a929285fe1c04dbf59874288db584f2567534858/assets/Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000861/target_video.mp4",
+      "bytes": 2300953,
+      "sha256": "fa5cfb60b37c539a77cdd743c5bfbd5d7b9a1b4c5062b290c715628834e9af4a",
+      "status": "PASS"
+    },
+    {
+      "kind": "reference",
+      "sample_id": "Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000861",
+      "path": "reference/right_camera.mp4",
+      "url": "https://asysama.github.io/rv2v-task394-review/review/rv2v/task-394/gate-c/media/896cc7907188dac5a0e65520a929285fe1c04dbf59874288db584f2567534858/assets/Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000861/reference/right_camera.mp4",
+      "bytes": 739943,
+      "sha256": "a3dfd1237d5b32cbfe0fe4875e3eeb4bf8150986765f0ce50e4e69cf887bfe10",
+      "status": "PASS"
+    }
+  ],
+  "completed_at_utc": "2026-09-02T12:25:23.116245+00:00",
+  "verification_digest": "abb8b9ddd7307df5cfc6df26140c98bcee833ceffd0b770d7c7b240e70b65768"
+}
