@@ -1,0 +1,318 @@
+{
+  "schema_version": "1.0",
+  "sample_id": "Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000600",
+  "task": {
+    "id": "Task_394",
+    "name": "synchronized_stereo_rgb_to_disparity_visualization",
+    "modality": "rv2v"
+  },
+  "source": {
+    "dataset": "DSEC",
+    "split": "test",
+    "sample_id": "DSEC/train/zurich_city_07_a/disparity-ordinals/000690-000719",
+    "uri": "s3://rv2v-data/raw/taxonomy/Task_394_synchronized_stereo_rgb_to_disparity_visualization_data-pipeline/zurich_city_07_a/"
+  },
+  "media": {
+    "input": {
+      "file": "input_video.mp4",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "num_frames": 30
+    },
+    "target": {
+      "file": "target_video.mp4",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "num_frames": 30
+    }
+  },
+  "reference": {
+    "directory": "reference",
+    "assets": [
+      {
+        "path": "reference/right_camera.mp4",
+        "mime_type": "video/mp4",
+        "bytes": 897346,
+        "sha256": "aa631957e03adcfb25808d1f000bbdfa33e2f0f5d0d72a6627a81fb12b8924bd",
+        "properties": {
+          "width": 640,
+          "height": 480,
+          "fps": 10.0,
+          "num_frames": 30
+        }
+      }
+    ]
+  },
+  "pipeline": {
+    "name": "synchronized_stereo_rgb_to_disparity_visualization",
+    "version": "0.1.0",
+    "commit": "f7e05a22444e55bd78778894493f5baae3750ab7"
+  },
+  "optional": {
+    "adapter_id": "task394-dsec-stereo-image-disparity/1",
+    "adapter_contract_sha256": "5ea96bfc26904b6d96808f7ee1e5f94d0eb38e01d5871d046b91c5b99868567e",
+    "source_id": "dsec",
+    "source_sequence": "zurich_city_07_a",
+    "source_family": "zurich_city_07",
+    "start_disparity_ordinal": 690,
+    "stop_disparity_ordinal_exclusive": 720,
+    "source_frame_names": [
+      "001380.png",
+      "001382.png",
+      "001384.png",
+      "001386.png",
+      "001388.png",
+      "001390.png",
+      "001392.png",
+      "001394.png",
+      "001396.png",
+      "001398.png",
+      "001400.png",
+      "001402.png",
+      "001404.png",
+      "001406.png",
+      "001408.png",
+      "001410.png",
+      "001412.png",
+      "001414.png",
+      "001416.png",
+      "001418.png",
+      "001420.png",
+      "001422.png",
+      "001424.png",
+      "001426.png",
+      "001428.png",
+      "001430.png",
+      "001432.png",
+      "001434.png",
+      "001436.png",
+      "001438.png"
+    ],
+    "source_timestamps_us": [
+      41845100290,
+      41845200298,
+      41845300294,
+      41845400293,
+      41845500295,
+      41845600276,
+      41845700277,
+      41845800283,
+      41845900288,
+      41846000214,
+      41846100238,
+      41846200242,
+      41846300236,
+      41846400243,
+      41846500226,
+      41846600224,
+      41846700234,
+      41846800242,
+      41846900246,
+      41847000180,
+      41847100205,
+      41847200208,
+      41847300222,
+      41847400230,
+      41847500219,
+      41847600237,
+      41847700244,
+      41847800238,
+      41847900256,
+      41848000198
+    ],
+    "raw_identities": {
+      "raw_verification_sha256": "3f0efa218c008233ba36f608470b4ddb527a106b7e88ec5104d8be1f36b304ed",
+      "assets": {
+        "images_rectified_left": {
+          "source_url": "https://download.ifi.uzh.ch/rpg/DSEC/train/zurich_city_07_a/zurich_city_07_a_images_rectified_left.zip",
+          "bytes": 3129511538,
+          "sha256": "2663026dfc4340a89d97d11492ab50b56843b82f4da65bbb499fed4e4aa03bcf"
+        },
+        "images_rectified_right": {
+          "source_url": "https://download.ifi.uzh.ch/rpg/DSEC/train/zurich_city_07_a/zurich_city_07_a_images_rectified_right.zip",
+          "bytes": 3145164252,
+          "sha256": "927979ec45a9ad075bb22a63494eabbb955e6a40375f77de77b86d8abe90e8b6"
+        },
+        "disparity_image": {
+          "source_url": "https://download.ifi.uzh.ch/rpg/DSEC/train/zurich_city_07_a/zurich_city_07_a_disparity_image.zip",
+          "bytes": 309471189,
+          "sha256": "f7365656bb5cd76118e556107ecd90db449749ec1e41e94d3b78778eb4c2fcfd"
+        },
+        "disparity_timestamps": {
+          "source_url": "https://download.ifi.uzh.ch/rpg/DSEC/train/zurich_city_07_a/zurich_city_07_a_disparity_timestamps.txt",
+          "bytes": 8784,
+          "sha256": "593426d48c68282c5c8a57ccd578a84f3c579c53bdba4c73a56d28ce16400f1b"
+        }
+      }
+    },
+    "target_semantics": {
+      "annotation": "official DSEC image-view disparity",
+      "decode": "uint16 / 256 = source-resolution pixels",
+      "colormap": "OpenCV COLORMAP_TURBO",
+      "fixed_range_source_pixels": [
+        0,
+        192
+      ],
+      "invalid": "raw zero rendered black",
+      "interpolation_or_hole_filling": "forbidden"
+    },
+    "disparity_frame_statistics": [
+      {
+        "valid_fraction": 0.07938850308641976,
+        "maximum_source_pixels": 128.90625,
+        "mean_source_pixels": 28.01660919189453
+      },
+      {
+        "valid_fraction": 0.07187178497942387,
+        "maximum_source_pixels": 128.98046875,
+        "mean_source_pixels": 27.645238876342773
+      },
+      {
+        "valid_fraction": 0.08969007201646091,
+        "maximum_source_pixels": 128.43359375,
+        "mean_source_pixels": 29.032161712646484
+      },
+      {
+        "valid_fraction": 0.09826388888888889,
+        "maximum_source_pixels": 128.85546875,
+        "mean_source_pixels": 29.549686431884766
+      },
+      {
+        "valid_fraction": 0.10165444958847737,
+        "maximum_source_pixels": 128.6484375,
+        "mean_source_pixels": 29.477294921875
+      },
+      {
+        "valid_fraction": 0.09878279320987654,
+        "maximum_source_pixels": 128.921875,
+        "mean_source_pixels": 29.295207977294922
+      },
+      {
+        "valid_fraction": 0.09964570473251029,
+        "maximum_source_pixels": 128.46875,
+        "mean_source_pixels": 28.990478515625
+      },
+      {
+        "valid_fraction": 0.09794495884773663,
+        "maximum_source_pixels": 128.93359375,
+        "mean_source_pixels": 29.011869430541992
+      },
+      {
+        "valid_fraction": 0.0926999742798354,
+        "maximum_source_pixels": 128.640625,
+        "mean_source_pixels": 28.708669662475586
+      },
+      {
+        "valid_fraction": 0.09533243312757202,
+        "maximum_source_pixels": 128.8125,
+        "mean_source_pixels": 29.659202575683594
+      },
+      {
+        "valid_fraction": 0.0743164866255144,
+        "maximum_source_pixels": 128.984375,
+        "mean_source_pixels": 28.35205078125
+      },
+      {
+        "valid_fraction": 0.09169560185185185,
+        "maximum_source_pixels": 128.70703125,
+        "mean_source_pixels": 30.44550323486328
+      },
+      {
+        "valid_fraction": 0.09145897633744857,
+        "maximum_source_pixels": 128.94140625,
+        "mean_source_pixels": 30.982603073120117
+      },
+      {
+        "valid_fraction": 0.08827610596707819,
+        "maximum_source_pixels": 127.328125,
+        "mean_source_pixels": 31.4619083404541
+      },
+      {
+        "valid_fraction": 0.08472093621399177,
+        "maximum_source_pixels": 128.953125,
+        "mean_source_pixels": 31.772979736328125
+      },
+      {
+        "valid_fraction": 0.08281764403292181,
+        "maximum_source_pixels": 128.87109375,
+        "mean_source_pixels": 31.82193374633789
+      },
+      {
+        "valid_fraction": 0.08308899176954733,
+        "maximum_source_pixels": 128.64453125,
+        "mean_source_pixels": 32.13467025756836
+      },
+      {
+        "valid_fraction": 0.0846116255144033,
+        "maximum_source_pixels": 128.8984375,
+        "mean_source_pixels": 31.3814697265625
+      },
+      {
+        "valid_fraction": 0.08744470164609054,
+        "maximum_source_pixels": 128.8125,
+        "mean_source_pixels": 30.100507736206055
+      },
+      {
+        "valid_fraction": 0.09566293724279835,
+        "maximum_source_pixels": 128.96875,
+        "mean_source_pixels": 29.17719078063965
+      },
+      {
+        "valid_fraction": 0.09800861625514404,
+        "maximum_source_pixels": 128.578125,
+        "mean_source_pixels": 28.626461029052734
+      },
+      {
+        "valid_fraction": 0.09941358024691357,
+        "maximum_source_pixels": 127.7109375,
+        "mean_source_pixels": 28.67279815673828
+      },
+      {
+        "valid_fraction": 0.10253600823045267,
+        "maximum_source_pixels": 128.125,
+        "mean_source_pixels": 28.70943260192871
+      },
+      {
+        "valid_fraction": 0.10358603395061729,
+        "maximum_source_pixels": 128.9296875,
+        "mean_source_pixels": 28.714292526245117
+      },
+      {
+        "valid_fraction": 0.10594328703703704,
+        "maximum_source_pixels": 128.26171875,
+        "mean_source_pixels": 28.77769660949707
+      },
+      {
+        "valid_fraction": 0.10749807098765432,
+        "maximum_source_pixels": 128.7265625,
+        "mean_source_pixels": 28.64929962158203
+      },
+      {
+        "valid_fraction": 0.11010931069958847,
+        "maximum_source_pixels": 128.5703125,
+        "mean_source_pixels": 28.857328414916992
+      },
+      {
+        "valid_fraction": 0.1119142232510288,
+        "maximum_source_pixels": 128.94140625,
+        "mean_source_pixels": 28.909631729125977
+      },
+      {
+        "valid_fraction": 0.11436856995884774,
+        "maximum_source_pixels": 128.859375,
+        "mean_source_pixels": 29.231443405151367
+      },
+      {
+        "valid_fraction": 0.11820023148148148,
+        "maximum_source_pixels": 127.984375,
+        "mean_source_pixels": 28.442214965820312
+      }
+    ],
+    "prompt_sha256": "7cc399a2f9d8f19afc54d1700b2a8842cc6a3b1b72752a83aa269cdc1c41462f"
+  },
+  "identity": {
+    "sample_fingerprint": "9c3067489b282c4eefa1164b69f1ffce9f73e56cd20f0261b8d895f161aae9f5"
+  }
+}

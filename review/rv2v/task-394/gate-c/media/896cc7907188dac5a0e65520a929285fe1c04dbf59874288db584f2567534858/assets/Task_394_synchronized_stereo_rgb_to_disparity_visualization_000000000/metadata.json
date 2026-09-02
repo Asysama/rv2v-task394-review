@@ -1,0 +1,318 @@
+{
+  "schema_version": "1.0",
+  "sample_id": "Task_394_synchronized_stereo_rgb_to_disparity_visualization_000000000",
+  "task": {
+    "id": "Task_394",
+    "name": "synchronized_stereo_rgb_to_disparity_visualization",
+    "modality": "rv2v"
+  },
+  "source": {
+    "dataset": "DSEC",
+    "split": "train",
+    "sample_id": "DSEC/train/interlaken_00_c/disparity-ordinals/000000-000029",
+    "uri": "s3://rv2v-data/raw/taxonomy/Task_394_synchronized_stereo_rgb_to_disparity_visualization_data-pipeline/interlaken_00_c/"
+  },
+  "media": {
+    "input": {
+      "file": "input_video.mp4",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "num_frames": 30
+    },
+    "target": {
+      "file": "target_video.mp4",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "num_frames": 30
+    }
+  },
+  "reference": {
+    "directory": "reference",
+    "assets": [
+      {
+        "path": "reference/right_camera.mp4",
+        "mime_type": "video/mp4",
+        "bytes": 1167034,
+        "sha256": "653e98abc921b848a9d43b0644969364544025ae8a8ce7158652497eebfd192b",
+        "properties": {
+          "width": 640,
+          "height": 480,
+          "fps": 10.0,
+          "num_frames": 30
+        }
+      }
+    ]
+  },
+  "pipeline": {
+    "name": "synchronized_stereo_rgb_to_disparity_visualization",
+    "version": "0.1.0",
+    "commit": "f7e05a22444e55bd78778894493f5baae3750ab7"
+  },
+  "optional": {
+    "adapter_id": "task394-dsec-stereo-image-disparity/1",
+    "adapter_contract_sha256": "5ea96bfc26904b6d96808f7ee1e5f94d0eb38e01d5871d046b91c5b99868567e",
+    "source_id": "dsec",
+    "source_sequence": "interlaken_00_c",
+    "source_family": "interlaken_00",
+    "start_disparity_ordinal": 0,
+    "stop_disparity_ordinal_exclusive": 30,
+    "source_frame_names": [
+      "000000.png",
+      "000002.png",
+      "000004.png",
+      "000006.png",
+      "000008.png",
+      "000010.png",
+      "000012.png",
+      "000014.png",
+      "000016.png",
+      "000018.png",
+      "000020.png",
+      "000022.png",
+      "000024.png",
+      "000026.png",
+      "000028.png",
+      "000030.png",
+      "000032.png",
+      "000034.png",
+      "000036.png",
+      "000038.png",
+      "000040.png",
+      "000042.png",
+      "000044.png",
+      "000046.png",
+      "000048.png",
+      "000050.png",
+      "000052.png",
+      "000054.png",
+      "000056.png",
+      "000058.png"
+    ],
+    "source_timestamps_us": [
+      51805200790,
+      51805300793,
+      51805400783,
+      51805500789,
+      51805600782,
+      51805700763,
+      51805800761,
+      51805900759,
+      51806000687,
+      51806100717,
+      51806200724,
+      51806300741,
+      51806400745,
+      51806500743,
+      51806600733,
+      51806700729,
+      51806800708,
+      51806900710,
+      51807000633,
+      51807100658,
+      51807200638,
+      51807300636,
+      51807400614,
+      51807500609,
+      51807600607,
+      51807700580,
+      51807800572,
+      51807900571,
+      51808000495,
+      51808100529
+    ],
+    "raw_identities": {
+      "raw_verification_sha256": "996bbaa13f2378cacfa938dacffa575038406a5dfd2fa77ae33ea38a18b4b48f",
+      "assets": {
+        "images_rectified_left": {
+          "source_url": "https://download.ifi.uzh.ch/rpg/DSEC/train/interlaken_00_c/interlaken_00_c_images_rectified_left.zip",
+          "bytes": 1358423573,
+          "sha256": "baebf5839c8d40cbe815dd6d54cfb4ab3f5cca2281c10b446549e3cb0d2df09f"
+        },
+        "images_rectified_right": {
+          "source_url": "https://download.ifi.uzh.ch/rpg/DSEC/train/interlaken_00_c/interlaken_00_c_images_rectified_right.zip",
+          "bytes": 1305360954,
+          "sha256": "9ef24d8222eb20d0f4455b06053ae24beafb34aa8f97635b73cdd1a0eea2c84c"
+        },
+        "disparity_image": {
+          "source_url": "https://download.ifi.uzh.ch/rpg/DSEC/train/interlaken_00_c/interlaken_00_c_disparity_image.zip",
+          "bytes": 112890456,
+          "sha256": "58017af03e699361abccdd2d397e2ca259e225007d7242671fbaa67197016304"
+        },
+        "disparity_timestamps": {
+          "source_url": "https://download.ifi.uzh.ch/rpg/DSEC/train/interlaken_00_c/interlaken_00_c_disparity_timestamps.txt",
+          "bytes": 3228,
+          "sha256": "b7999930f8812533da44218f548e2d5b4c3be3ef46ac70899e6f6888fbf46eed"
+        }
+      }
+    },
+    "target_semantics": {
+      "annotation": "official DSEC image-view disparity",
+      "decode": "uint16 / 256 = source-resolution pixels",
+      "colormap": "OpenCV COLORMAP_TURBO",
+      "fixed_range_source_pixels": [
+        0,
+        192
+      ],
+      "invalid": "raw zero rendered black",
+      "interpolation_or_hole_filling": "forbidden"
+    },
+    "disparity_frame_statistics": [
+      {
+        "valid_fraction": 0.09565072016460906,
+        "maximum_source_pixels": 128.984375,
+        "mean_source_pixels": 45.54418182373047
+      },
+      {
+        "valid_fraction": 0.09427919238683127,
+        "maximum_source_pixels": 128.57421875,
+        "mean_source_pixels": 46.465084075927734
+      },
+      {
+        "valid_fraction": 0.09402006172839507,
+        "maximum_source_pixels": 128.89453125,
+        "mean_source_pixels": 47.194766998291016
+      },
+      {
+        "valid_fraction": 0.09544753086419754,
+        "maximum_source_pixels": 128.98828125,
+        "mean_source_pixels": 47.598052978515625
+      },
+      {
+        "valid_fraction": 0.09344135802469136,
+        "maximum_source_pixels": 128.96484375,
+        "mean_source_pixels": 47.711891174316406
+      },
+      {
+        "valid_fraction": 0.0924170524691358,
+        "maximum_source_pixels": 128.97265625,
+        "mean_source_pixels": 47.59878158569336
+      },
+      {
+        "valid_fraction": 0.09118505658436214,
+        "maximum_source_pixels": 128.9375,
+        "mean_source_pixels": 47.643985748291016
+      },
+      {
+        "valid_fraction": 0.09032536008230453,
+        "maximum_source_pixels": 128.8828125,
+        "mean_source_pixels": 46.602542877197266
+      },
+      {
+        "valid_fraction": 0.0898366769547325,
+        "maximum_source_pixels": 128.984375,
+        "mean_source_pixels": 46.42073440551758
+      },
+      {
+        "valid_fraction": 0.09135738168724279,
+        "maximum_source_pixels": 128.9453125,
+        "mean_source_pixels": 47.41704177856445
+      },
+      {
+        "valid_fraction": 0.08969650205761318,
+        "maximum_source_pixels": 128.9609375,
+        "mean_source_pixels": 47.199798583984375
+      },
+      {
+        "valid_fraction": 0.08764789094650206,
+        "maximum_source_pixels": 128.90625,
+        "mean_source_pixels": 45.450439453125
+      },
+      {
+        "valid_fraction": 0.08653356481481482,
+        "maximum_source_pixels": 128.921875,
+        "mean_source_pixels": 44.705753326416016
+      },
+      {
+        "valid_fraction": 0.08623971193415637,
+        "maximum_source_pixels": 128.9453125,
+        "mean_source_pixels": 44.845184326171875
+      },
+      {
+        "valid_fraction": 0.08351080246913581,
+        "maximum_source_pixels": 128.9765625,
+        "mean_source_pixels": 43.88334274291992
+      },
+      {
+        "valid_fraction": 0.08424189814814814,
+        "maximum_source_pixels": 128.92578125,
+        "mean_source_pixels": 44.00652313232422
+      },
+      {
+        "valid_fraction": 0.08234760802469136,
+        "maximum_source_pixels": 129.0,
+        "mean_source_pixels": 42.46256637573242
+      },
+      {
+        "valid_fraction": 0.08371784979423869,
+        "maximum_source_pixels": 128.859375,
+        "mean_source_pixels": 42.16679382324219
+      },
+      {
+        "valid_fraction": 0.08430491255144033,
+        "maximum_source_pixels": 128.98046875,
+        "mean_source_pixels": 41.67338562011719
+      },
+      {
+        "valid_fraction": 0.08648148148148148,
+        "maximum_source_pixels": 128.8515625,
+        "mean_source_pixels": 41.81398391723633
+      },
+      {
+        "valid_fraction": 0.08888374485596708,
+        "maximum_source_pixels": 128.84765625,
+        "mean_source_pixels": 41.59206771850586
+      },
+      {
+        "valid_fraction": 0.09181841563786008,
+        "maximum_source_pixels": 128.96875,
+        "mean_source_pixels": 41.450653076171875
+      },
+      {
+        "valid_fraction": 0.09243762860082305,
+        "maximum_source_pixels": 128.9375,
+        "mean_source_pixels": 41.21159744262695
+      },
+      {
+        "valid_fraction": 0.094565329218107,
+        "maximum_source_pixels": 128.69921875,
+        "mean_source_pixels": 41.19508743286133
+      },
+      {
+        "valid_fraction": 0.09511959876543209,
+        "maximum_source_pixels": 128.78125,
+        "mean_source_pixels": 40.72557067871094
+      },
+      {
+        "valid_fraction": 0.0954173096707819,
+        "maximum_source_pixels": 128.90234375,
+        "mean_source_pixels": 39.90827560424805
+      },
+      {
+        "valid_fraction": 0.09764274691358024,
+        "maximum_source_pixels": 128.9921875,
+        "mean_source_pixels": 39.319549560546875
+      },
+      {
+        "valid_fraction": 0.09815972222222222,
+        "maximum_source_pixels": 128.9453125,
+        "mean_source_pixels": 38.58553695678711
+      },
+      {
+        "valid_fraction": 0.09703703703703703,
+        "maximum_source_pixels": 128.9921875,
+        "mean_source_pixels": 37.90245819091797
+      },
+      {
+        "valid_fraction": 0.09558063271604939,
+        "maximum_source_pixels": 128.8203125,
+        "mean_source_pixels": 36.870540618896484
+      }
+    ],
+    "prompt_sha256": "7cc399a2f9d8f19afc54d1700b2a8842cc6a3b1b72752a83aa269cdc1c41462f"
+  },
+  "identity": {
+    "sample_fingerprint": "cb9a4bd491e9717d1e0d26fb8a48e4df5b43c9955b1550dd2af0c596cafd6d32"
+  }
+}

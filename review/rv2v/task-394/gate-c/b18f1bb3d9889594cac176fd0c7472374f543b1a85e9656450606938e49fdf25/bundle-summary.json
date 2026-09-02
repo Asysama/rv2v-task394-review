@@ -1,0 +1,14 @@
+{
+  "schema_version": "rv2v-task394-gate-c-local-bundle/1",
+  "official": false,
+  "head_commit": "e8da635cc31ff6c0b542c1e8ab447474708dff08",
+  "human_evaluator_login": "foeasd",
+  "evidence_digest": "b18f1bb3d9889594cac176fd0c7472374f543b1a85e9656450606938e49fdf25",
+  "reviewed_sample_count": 8,
+  "resource_count": 24,
+  "resources_sha256": "b4287c04f64c61c4b1a14eaea0f84db71215a4b23b0f19de99d5d3f402797b16",
+  "html_bytes": 202016,
+  "html_sha256": "e0d160e9be22d1a8e6100327334e7ae7b339de5da619821e9681d8daa329b71a",
+  "owner_checks_initial": 0,
+  "owner_checks_total": 24
+}

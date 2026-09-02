@@ -1,0 +1,1 @@
+Using the synchronized rectified right-camera reference video, convert the left-camera input video into a frame-aligned disparity visualization. Preserve the exact frame count, timing, resolution, and driving sequence. Use the fixed task-wide 0-192 source-pixel Turbo color scale and render invalid disparity pixels as black.
